@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: antiquewhite;
+    color: black;
+}
+header{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    
+   
+}
+
+nav{
+    display: flex;
+    
+    align-items: center;
+    max-width: 1445px;
+    margin: 0 auto;
+    gap: 1.5rem;
+    justify-content: space-between;
+    
+}
+.nav-links{
+    display: flex;
+    gap: 3.5rem;
+    background-color: black;
+    padding: 21px;
+    margin-top: 3.5rem;
+    border-radius: 20px;
+}
+.nav-links a{
+    color: white;
+    font-size: 19px;
+    background-color: none;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 1s;
+}
+.nav-links a.active{
+    background-color: aqua;
+    
+}
+.nav-links a:hover{
+    background-color: blueviolet;
+    border-radius: 7px;
+
+}
+/* room */
+.books-room{
+    width: 98%;
+    height: 97%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.box-div{
+    align-items: center;
+    justify-content: center;
+    margin-left: 54px;
+}
+.content{
+    align-items: center;
+    margin: o auto;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+.service-card{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.service-card:hover{
+    transform: scale(1.03);
+}
+.service-card img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.service-card .title{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 0;
+}
+/* special-offer */
+.offer-box{
+    width: 76%;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    margin-bottom: 5rem;
+    position: relative;
+    
+}
+.offer-header h4{
+    padding: 1rem;
+    font-weight: 900;
+    color: #00ffff;
+    font-size: medium;
+    margin-left: 17px;
+}
+.offer-header h2{
+    font-weight: bold;
+    color: black;
+   padding: 2rem;
+   margin-right: 8px;
+   & a{
+    text-decoration: none;
+    color: aqua;
+    margin-left: 30rem;
+    font-size: larger;
+   }
+    
+}
+.offer-header p{
+    font-weight: 400;
+    padding-bottom: 4.5rem;
+    margin-left: 31px;
+}
+.plan-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.plan-card{
+   background: linear-gradient(135, rgba(255,0,0,0.1));
+   border-radius: 12px;
+   transition: transform0.3s;
+   border: none;
+   background-color: white;
+   overflow: hidden;
+   padding-right: 6px;
+   cursor: pointer;
+   transition: 1s;
+   
+}
+.plan-card:hover{
+    transform: translateY(-6px);
+}
+.plan-poster{
+    padding: 20px;
+}
+.plan-poster h5{
+     padding: 1rem;
+     
+}
+.plan-poster i{
+   display: flex;
+   margin-left: 16rem;
+   margin-bottom: 1rem;
+   opacity: 1;
+   font-size: small;
+}
+.plan-poster h6{
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+.plan-poster h3{
+    margin-bottom: 12px;
+
+}
+.price-content{
+    margin-bottom: 2rem; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 54px;
+
+}
+.currency{
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.amount{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* footer */
+.footer-section{
+    width: 95%;
+    border: none;
+    padding: 2rem;
+    margin-left: 4rem;
+    background-color: #333;
+    border-radius: 9px;
+    margin-right: 9px;
+}
+
+.footer-section{
+width: 100%;
+
+background-color: #333;
+}
+.sucbscribe-section{
+    padding: 40px 20px;
+    
+    color: red;
+}
+.sucbscribe-form{
+    display: inline-flex;
+    margin-top: 20px;
+    border-radius: 8px;
+   overflow: hidden;
+     
+}
+.sucbscribe-form input[type="email"] {
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 300px;
+}
+.sucbscribe-form button {
+    background-color: #00cfff;
+    color: azure;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+.footer-logo h2{
+    font-size: 43px;
+    margin: 0;
+}
+.footer-logo span{
+    color: #00ffff;
+}
+.footer-links{
+    display: flex;
+    gap: 54px;
+}
+.footer-links div p{
+    margin: 6px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.footer-links div p:hover{
+    text-decoration: underline;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
